@@ -1,2 +1,2 @@
 # AFS-projects
-This is a repo of AFSC54438's personal projects
+this repo contains a python program for rearranging pdf files into booklet format

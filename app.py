@@ -22,6 +22,8 @@ def main():
             continue
         else:
             print(convert_booklet)
+            print("To print your file, execute this command:")
+            print(colored(f"lp -o number-up=2 -o sides=two-sided-short-edge -o media=A4 {files[f - 1]}-booklet.pdf", "light_yellow"))
 
         cont = get_string("Continue (Y/N)? ").strip().upper()
 
@@ -31,8 +33,6 @@ def main():
         if cont == "Y":
             continue
         else:
-            print("To print your files, execute this command:")
-            print(colored("lp -o number-up=2 -o sides=two-sided-short-edge -o media=A4 {filename}.pdf", "light_yellow"))
             break
 
 

@@ -5,11 +5,6 @@ from os import listdir, path
 
 class Booklet():
     def __init__(self, upload_dir, save_dir):
-        """
-        upload_dir (string) -> directory to upload files to be converted
-        save_dir (string) -> directory to save converted files
-        """
-        
         self.upload_dir = upload_dir
         self.save_dir = save_dir
         self.upload_files = sorted([file for file in listdir(self.upload_dir) if path.splitext(file)[1].lower() == ".pdf"])
@@ -47,26 +42,13 @@ class Booklet():
             exit()
 
 
-    def show_uploads(self):
-        """
-        Prints a list of files in uploads directory
-        """
-        
-        for count, f in enumerate(self.upload_files):
-            print(f"{count+1}) {f}")
+    def list_saved_files(self):
+        return sorted([file for file in listdir(self.save_dir) if path.splitext(file)[1].lower() == ".pdf"])
 
-    def list_files(self):
+    def list_upload_files(self):
         return self.upload_files
     
     def convert(self, f):
-        """
-        Rearrange the pages of PDF file, f, into a booklet format
-
-        f (string) -> file name with .pdf (e.g. test.pdf)
-
-        Saves the converted file to save directory
-        """
-        
         if f not in self.upload_files:
             print(colored(f"{f} cannot be found in {self.upload_dir}", "red"))
             return None

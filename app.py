@@ -3,7 +3,6 @@ from termcolor import colored
 from booklet import Booklet
 from os import path
 
-
 uploads = "files_upload"
 save = "files_booklet"
 

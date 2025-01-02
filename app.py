@@ -3,10 +3,12 @@ from termcolor import colored
 from booklet import Booklet
 from os import path
 
+
 uploads = "files_upload"
 save = "files_booklet"
 
 booklet = Booklet(uploads, save)
+
 
 def main():
     files = booklet.list_upload_files()
@@ -32,7 +34,12 @@ def main():
         else:
             print(convert_booklet)
             print("To print your file, execute this command:")
-            print(colored(f"lp -o number-up=2 -o sides=two-sided-short-edge -o media=A4 {files[f - 1]}-booklet.pdf", "light_yellow"))
+            print(
+                colored(
+                    f"lp -o number-up=2 -o sides=two-sided-short-edge -o media=A4 {path.splitext(files[f - 1])[0]}-booklet.pdf",
+                    "light_yellow",
+                )
+            )
 
         cont = get_string("Continue (Y/N)? ").strip().upper()
 

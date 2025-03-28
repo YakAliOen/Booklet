@@ -6,13 +6,13 @@ a file in a booklet format is a file where when you print it double-sided and fl
 booklet.py allows u to do that cuz apps that support print in booklet just suck
 
 to ensure that this program works, make sure your directory follows this exact structure:
-booklet/
-  ├── files_booklet/
-  ├── files_upload/
-  ├── app.py
-  ├── booklet.py
-  ├── empty.py
-  └── print.py
+- booklet/
+  - files_booklet/
+  - files_upload/
+  - app.py
+  - booklet.py
+  - empty.py
+  - print.py
 
 files_upload will contain pdf files that you wanna convert
 files_booklet will contain converted pdf files

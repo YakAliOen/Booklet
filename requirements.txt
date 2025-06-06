@@ -1,7 +1,0 @@
-cs50
-termcolor
-os
-PyPDF2
-sys
-subprocess
-platform

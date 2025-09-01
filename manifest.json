@@ -9,5 +9,5 @@
       "default_title": "Download file as booklet!"
     },
     "permissions": ["downloads", "activeTab"],
-    "author": ["AFS", "Aliano"]
+    "author": "AFS, Aliano"
 }

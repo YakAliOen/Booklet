@@ -1,11 +1,11 @@
 {
     "name": "Booklet",
     "description": "Downloads PDF files into booklet format",
-    "version": "1.0",
+    "version": "1.1",
     "manifest_version": 3,
     "action": {
       "default_popup": "booklet.html",
-      "default_icon": "booklet.png",
+      "default_icon": "booklet_icon.png",
       "default_title": "Download file as booklet!"
     },
     "permissions": ["downloads", "activeTab"],

@@ -1,21 +1,20 @@
-# Security Policy
+# Privacy Policy  
 
-## Supported Versions
+Opera GX Browser extension to download PDF files to a booklet format.  
 
-Use this section to tell people about which versions of your project are
-currently being supported with security updates.
+This extension does not collect, store, or share personal information. All processing happens locally in your browser.  
 
-| Version | Supported          |
-| ------- | ------------------ |
-| 5.1.x   | :white_check_mark: |
-| 5.0.x   | :x:                |
-| 4.0.x   | :white_check_mark: |
-| < 4.0   | :x:                |
+## Data Collection  
+- No personal data is collected or transmitted.  
+- No cookies, analytics, or tracking are used.  
 
-## Reporting a Vulnerability
+## Permissions  
+Any permissions requested (e.g., storage, tabs) are used only to enable extension features. Data remains on your device.  
 
-Use this section to tell people how to report a vulnerability.
+## Third-Party Services  
+The extension does not send data to external services or third parties.  
 
-Tell them where to go, how often they can expect to get an update on a
-reported vulnerability, what to expect if the vulnerability is accepted or
-declined, etc.
+## Updates  
+Changes to this policy will be reflected here with an updated date.  
+
+_Last updated: September 2, 2025_  
